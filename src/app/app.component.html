@@ -1,0 +1,198 @@
+<div class="page">
+  <div class="shellbar">
+    <ui5-shellbar
+      id="shellbar"
+      primary-title="Create Salesman Profile Application"
+      notifications-count="99+"
+      show-notifications=""
+    >
+      <ui5-avatar slot="profile">
+        <img
+          src="https://sap.github.io/ui5-webcomponents/images/avatars/woman_avatar_5.png"
+        />
+      </ui5-avatar>
+      <img
+        slot="logo"
+        src="https://sap.github.io/ui5-webcomponents/images/sap-logo-svg.svg"
+      />
+      <ui5-button icon="nav-back" slot="startButton"></ui5-button>
+
+      <ui5-input
+        id="searchField"
+        slot="searchField"
+        placeholder="search everything"
+      ></ui5-input>
+      <ui5-li slot="menuItems">Application 1</ui5-li>
+      <ui5-li slot="menuItems">Application 2</ui5-li>
+      <ui5-li slot="menuItems">Application 3</ui5-li>
+      <ui5-li slot="menuItems">Application 4</ui5-li>
+      <ui5-li slot="menuItems">Application 5</ui5-li>
+    </ui5-shellbar>
+  </div>
+
+  <div class="object_header">
+    <div class="header">
+      <div class="toolbar">
+        <div
+          class="title"
+          style="
+            background-color: white;
+            width: 100%;
+            height: 256px;
+            padding: 24px 48px 16px 48px;
+          "
+        >
+          <ui5-title style="margin-bottom: 16px;">Create Salesman Profile</ui5-title>
+          <div class="frame" style="display: grid;">
+            <ui5-label for="myInput">Supplier Code:</ui5-label>
+            <ui5-input id="valueHelpInput" placeholder="Enter product" style="background-color: 
+            rgba(239, 241, 242, 1); width: 300px;">
+              <ui5-icon
+                id="valueHelpIcon"
+                slot="icon"
+                name="value-help"
+              ></ui5-icon>
+            </ui5-input>
+          </div>
+        </div>
+      </div>
+      <div
+        class="icon_toolbar"
+        style="
+          gap: 32px;
+          background-color: white;
+          padding-left: 48px;
+          height: 44px;
+        "
+      >
+        <ui5-link
+          href="#master"
+          style="margin-right: 32px; color: black; font-weight: 700"
+          >Master Data</ui5-link
+        >
+        <ui5-link
+          href="#contribution"
+          style="margin-right: 32px; color: black; font-weight: 700"
+          >Contribution</ui5-link
+        >
+        <ui5-link
+          href="#machine"
+          style="margin-right: 32px; color: black; font-weight: 700"
+          >Machine Data</ui5-link
+        >
+        <ui5-link
+          href="#additional_data"
+          style="margin-right: 32px; color: black; font-weight: 700"
+          >Additional Data</ui5-link
+        >
+        <ui5-link
+          href="#notes"
+          style="margin-right: 32px; color: black; font-weight: 700"
+          >Notes</ui5-link
+        >
+        <ui5-link href="#attachment" style="color: black; font-weight: 700"
+          >Attachment</ui5-link
+        >
+      </div>
+    </div>
+  </div>
+
+  <div
+    style="
+      width: 100%;
+      height: 1559px;
+      overflow-y: visible;
+      overflow-x: hidden;
+      gap: 8px;
+      display: grid;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 32px;
+      margin-right: 32px;
+      scroll-behavior: smooth;
+    "
+  >
+    <section id="master">
+      <div
+        style="
+          width: 100%;
+          height: 288px;
+          border-radius: 12px;
+          gap: 8px;
+          margin-bottom: 8px;
+        "
+      >
+        <app-master-data></app-master-data>
+      </div>
+    </section>
+    <section id="contribution">
+      <div style="width: 100%; height: 160px">
+        <ui5-title
+          level="H4"
+          style="width: 100%; height: 36px; margin-top: 16px"
+          >Contribution Data</ui5-title
+        >
+        <div>
+          <app-contribution-data></app-contribution-data>
+        </div>
+      </div>
+    </section>
+    <section id="machine">
+      <div style="width: 100%; height: 327px">
+        <ui5-title
+          level="H4"
+          style="width: 100%; height: 44px; padding: 48px 16px 3px 0px"
+          >Machine Data</ui5-title
+        >
+        <div>
+          <app-machine-data></app-machine-data>
+        </div>
+      </div>
+    </section>
+    <section id="additional_data">
+      <div>
+        <div>
+          <app-additional-data></app-additional-data>
+        </div>
+      </div>
+    </section>
+    <section id="notes">
+      <div>
+        <ui5-title
+          level="H4"
+          style="width: 100%; height: 44px; padding: 0px 16px 0px 0px"
+          >Notes</ui5-title
+        >
+        <div>
+          <app-notes></app-notes>
+        </div>
+      </div>
+    </section>
+    <section id="attachment">
+      <div>
+        <app-attachment></app-attachment>
+      </div>
+    </section>
+  </div>
+
+  <div slot="footer" id="footer">
+    <ui5-bar
+      style="
+        width: auto;
+        margin-right: 16px;
+        border-radius: 8px;
+        margin-left: 16px;
+        height: 40px;
+        
+      "
+    >
+      <ui5-button design="Emphasized" slot="endContent"
+        >Save and Exit</ui5-button
+      >
+      <ui5-button slot="endContent" icon="slim-arrow-down"
+        >Save and Go To</ui5-button
+      >
+      <ui5-button design="Transparent" slot="endContent">Cancel</ui5-button>
+    </ui5-bar>
+  </div>
+</div>

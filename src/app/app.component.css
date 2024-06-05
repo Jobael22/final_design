@@ -1,0 +1,34 @@
+
+/* Default styles */
+.page {
+    height: 1990px;
+    width: 100%; 
+    background-color: rgb(245, 246, 247);
+}
+
+.shellbar {
+    width: 100%;
+    height: 44px;
+   
+}
+
+@media screen and (max-width: 1440px) {
+    .page {
+        width: 100%; 
+    }
+
+    .shellbar,
+    .header,
+    .content,
+    .associate_data {
+        width: 100%; 
+        margin-left: 0; 
+        padding-left: 0;
+    }
+
+    
+}
+
+
+
+

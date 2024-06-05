@@ -1,0 +1,29 @@
+<ui5-title
+  level="H4"
+  style="width: auto; height: 44px; padding: 0px 16px 0px 0px"
+  >Attachments</ui5-title
+>
+<ui5-upload-collection
+  style="
+    border-radius: 12px;
+    height: 334px;
+    width: auto;
+    margin-right: 32px;
+    padding-top: 16px;
+    /* border: 1px solid black; */
+    background-color: white;
+  "
+>
+  <div
+    slot="header"
+    class="header"
+    style="border-radius: 12px; margin-right: 32px"
+  >
+    <ui5-title level="H5" style="margin-left: 16px">Attachments (0)</ui5-title>
+    <div class="spacer"></div>
+    <ui5-button design="Transparent">Upload</ui5-button>
+    <ui5-file-uploader id="fileUploader" hide-input multiple>
+    </ui5-file-uploader>
+  </div>
+  <hr style="margin-right: 32px; margin-left: 16px" />
+</ui5-upload-collection>

@@ -1,0 +1,21 @@
+.form_group1{grid-area: first;}
+.form_group2{grid-area: second;}
+.form_group3{grid-area: third;}
+
+.sec-1{
+    background-color: white;
+    display: grid;
+    width: auto;
+    padding-right: 16px;
+    margin-right: 32px;
+    grid-template-areas: 
+    'first second third';
+    grid-template-columns: 318px 318px 318px;
+    grid-template-rows: 92px 92px 92px;
+    gap: 10px;
+}
+
+.form_group3{
+    margin-top: 37px;
+    margin-right: 700px;
+}
